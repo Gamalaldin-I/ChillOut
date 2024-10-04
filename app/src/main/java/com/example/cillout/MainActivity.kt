@@ -13,7 +13,11 @@ import com.example.cillout.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
+<<<<<<< HEAD
     @SuppressLint("ResourceAsColor")
+=======
+    @SuppressLint("ResourceAsColor", "SetTextI18n")
+>>>>>>> 4615546 (this is the first commit)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -53,7 +57,11 @@ class MainActivity : AppCompatActivity() {
                 }
                 else{
                     totalProfit=totalRemaining
+<<<<<<< HEAD
                     binding.overOrUnder.text="Sorry you are under good luck tommorow"
+=======
+                    binding.overOrUnder.text="Sorry you are underfetting good luck tommorow"
+>>>>>>> 4615546 (this is the first commit)
                     binding.overOrUnder.setTextColor(getColor(R.color.Red))
                 }}
                 catch (e:Exception){

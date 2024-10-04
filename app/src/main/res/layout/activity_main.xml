@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6EF"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/title_bg"
+        android:gravity="center"
+        android:padding="20dp"
+        android:rotation="3"
+        android:rotationX="23"
+        android:text="Calculate your shift Over!"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:id="@+id/inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/wared"
+                android:layout_width="match_parent"
+                android:background="@drawable/input_bg"
+                android:padding="7dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:hint="Wared"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/ohda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_bg"
+                android:padding="7dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:hint="Ohda"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/faka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:background="@drawable/input_bg"
+                android:padding="7dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:hint="Faka"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/fiza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:padding="7dp"
+                android:layout_marginTop="5dp"
+
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:hint="Fiza"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/extra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:padding="7dp"
+                android:layout_marginTop="5dp"
+
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:hint="Extra"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/salesQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:padding="7dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:hint="Sales Quantity"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/priceOfLitre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:layout_marginTop="5dp"
+
+                android:padding="7dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:hint="Litre Price"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/ground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:layout_marginTop="5dp"
+
+                android:padding="7dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:hint="GroundP100L"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/overPercentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Over Percentage"
+                android:background="@drawable/input_bg"
+                android:layout_marginTop="5dp"
+                android:padding="7dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+            <Button
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="History"
+                android:layout_gravity="center"
+                android:backgroundTint="#FD9C69"/>
+
+        </LinearLayout>
+    </LinearLayout>
+   <LinearLayout
+       android:id="@+id/mm"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/inputs">
+
+       <TextView
+           android:id="@+id/report"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Report"
+           android:textColor="#A82654"
+           android:textSize="20sp"
+           android:textStyle="bold" />
+       <Button
+           android:id="@+id/save"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="10dp"
+           android:text="Save"
+           android:backgroundTint="#FD9C69"/>
+
+   </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reportlo"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mm">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:columnCount="2"
+            android:rowCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:padding="7dp"
+                android:background="@drawable/report_box_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:id="@+id/totalSalesQuantityPriceText"
+                    android:layout_width="55dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Total Sales Quantity Price : " />
+
+                <TextView
+                    android:id="@+id/totalSalesQuantityPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="8"
+                    android:text="00"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/le"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text=" LE"
+                    android:textColor="@color/Green" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="7dp"
+                android:background="@drawable/report_box_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:id="@+id/totalGroundPriceText"
+                    android:layout_width="55dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Total Ground Price : " />
+
+                <TextView
+                    android:id="@+id/totalGroundPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:maxLength="8"
+                    android:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+
+                    android:text=" LE"
+                    android:textColor="@color/Green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="7dp"
+                android:background="@drawable/report_box_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/totalRevenueText"
+                    android:layout_width="55dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Total Revenue : " />
+
+                <TextView
+                    android:id="@+id/totalRevenue"
+                    android:maxLength="8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text=" LE"
+                    android:textColor="@color/Green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="7dp"
+                android:background="@drawable/report_box_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/remainingRevenueText"
+                    android:layout_width="55dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Remaining Revenue : " />
+
+                <TextView
+                    android:id="@+id/remainingRevenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:maxLength="8"
+                    android:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text=" LE"
+                    android:textColor="@color/Green" />
+            </LinearLayout>
+
+        </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/overOrUnder"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="30dp"
+        android:layout_marginTop="32dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportlo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overOrUnder">
+
+        <Button
+            android:id="@+id/calculateBtn"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Calculate" />
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:textColor="#A82654"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,7 @@ object History {
     fun addHistoyDay(shift:HistoryDay){
         historyArray.add(shift)
     }
-    fun remove(possition:Int){
-        historyArray.removeAt(possition)
+    fun remove(position:Int){
+        historyArray.removeAt(position)
     }
 }
